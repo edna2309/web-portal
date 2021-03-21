@@ -1,0 +1,475 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 21, 2020, 9:29:29 PM
+    Author     : Lenovo
+*/
+
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    transition: 0.6s ease-out;
+}
+
+body{
+    background:#f6f6f6;
+    font-size:11px;
+    font-family:arial;
+}
+
+.container{
+    padding:30px;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    margin:80px auto 0 auto;
+    width:97%;
+    
+}
+
+.naziv{
+    margin:0 23%;
+}
+
+.naziv img{
+    width:820px;
+}
+
+.login-button{
+    margin:auto;
+    width:160px;
+    height:60px;
+    text-transform:uppercase;
+    align-self:center;
+    background:#000;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:15px;
+    text-align:center;
+}
+
+.login-button a{
+    display:flex;
+    margin:auto;
+    text-align:center;
+    text-decoration: none;
+    color:white;
+    padding:20px;
+    padding-left:48px;
+}
+
+.login-button a:visited{
+    color:white;
+}
+
+.login-button:hover{
+    background:#DB7093;
+}
+
+.tekst{
+    font-size:17px;
+    text-align:center;
+    background:#000; 
+    padding:14px; 
+    color:#fff;
+    border-radius:15px 15px 15px 15px;
+}
+
+.tekst:hover{
+    background:#DB7093;
+}
+
+.tekst2{
+    font-size:17px;
+    text-align:center;
+    padding-bottom:26px;
+    
+}
+
+.poruka{
+    text-align:center;
+    width:35%;
+    padding:16px;
+    padding-bottom:10px;
+    color:#686868;
+    font-size:16px;
+    font-style:italic;
+}
+h1{
+    font-family:arial black;
+    font-size:40px;
+    margin-bottom:20px;    
+    text-transform:uppercase;    
+}
+a:hover{
+    text-decoration: none;
+    color: black !important;
+}
+form{
+    display:flex;
+    width:40%;
+    flex-direction:column;
+    padding:15px;
+}
+
+input{
+    font-size:16px;
+    padding:10px;
+    margin-bottom:15px;
+    border:none;
+    background:none;
+    border-bottom:1px solid #DB7093;
+}
+
+.defaultDugme{
+    margin-top:30px;
+    font-weight:bold;
+    background:#000;
+    color:white;
+    height:50px;
+    border:none;
+    text-transform:uppercase;
+    border-radius:15px;
+    padding:10px;
+    cursor: pointer;
+}
+
+.defaultDugme:hover {
+    background:#DB7093;
+}
+
+.loginpage{
+    font-size:14px;
+    text-decoration: none;
+    color:#cb3365;
+    margin-bottom:10px;
+}
+
+.loginpage:hover{
+    color:#8e2447;
+}
+
+.loginpage:visited{
+    color:#cb3365;
+}
+
+:-ms-input-placeholder{
+    font-style:italic;
+}
+
+.nazad{
+    font-size:28px;
+    text-decoration: none;
+    color:#cb3365;
+}
+
+.nazad:visited{
+    color:#cb3365;
+}
+
+.adminButton{
+    margin:auto;
+    padding:30px;
+    width:35%;
+    height:60px;
+    margin-bottom:20px;
+    display:flex;
+    text-transform:uppercase;
+    justify-content:center;
+    align-self:center;
+    background:#DB7093;
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+    border-radius:15px;
+    text-align:center;
+}
+
+.adminButton:hover {
+    background:#C56484;
+}
+
+.adminButton a {
+    text-decoration:none;
+    font-size:14px;
+    color:white;
+    align-self:center;
+    text-transform:uppercase;
+    text-align:center;
+    text-decoration: none;
+    width:100%;
+    padding:30px;
+}
+
+.adminButton a:visited{
+    text-decoration:none;
+    color:white;
+}
+
+.urednikButton{
+    margin:auto;
+    padding:25px;
+    width:18%;
+    height:50px;
+    font-weight:bold;
+    margin-bottom:20px;
+    display:flex;
+    text-transform:uppercase;
+    justify-content:center;
+    align-self:center;
+    background:#DB7093;
+    font-weight:bold;
+    color:white;
+    border-radius:15px;
+    text-align:center;
+}
+
+.urednikButton:hover {
+    background:#C56484;
+}
+
+.urednikButton a {
+    text-decoration:none;
+    font-size:14px;
+    color:white;
+    align-self:center;
+    text-transform:uppercase;
+    text-align:center;
+    text-decoration: none;
+    width:100%;
+    padding:20px;
+}
+
+.urednikButton a:visited{
+    text-decoration:none;
+    color:white;
+}
+
+select::-ms-expand { 
+    border:none;
+    background:none;
+}
+
+.select-css {
+    display: block;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.3;
+    padding: 15px;
+    padding-left:9px;
+    font-style:italic;
+    width: 100%;
+    max-width: 100%;
+    border:none;
+    background:none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-bottom:1px solid #DB7093;
+    margin-top:-10px;
+}
+
+.select-css:focus {
+    color: #000; 
+    outline: none;
+    border:none;
+    background:none;
+}
+
+.select-css option {
+    font-weight:normal;
+    border:none;
+}
+
+*[dir="rtl"] .select-css, :root:lang(ar) .select-css, :root:lang(iw) .select-css {
+    padding:15px;
+    border:none;
+    background:none;
+}
+
+.select-css:disabled, .select-css[aria-disabled=true] {
+    border:none;
+    background:none;
+}
+
+select option, select option:disabled, option, option:disabled {
+    border:none;
+    font-style:italic;
+    background:none;
+}
+
+.select-css:disabled:hover, .select-css[aria-disabled=true] {
+    border:none;
+    background:none;
+}
+
+select option[value="admin"], 
+select option[value="user"],
+select option[value="urednik"],
+select option[value="aktivan"],
+select option[value="neaktivan"],
+select option:disabled {
+  background:none;
+  border:none;
+}
+
+.novosti-naslov{
+    font-family:arial black;
+    font-size:40px;
+    text-transform:uppercase;    
+   
+    
+    text-align:center;
+    align-self:center;
+}
+
+.novost{
+    min-width:50%;
+    min-height:50%;
+    font-size:14px;
+    width:50%;
+    margin:28px;
+}
+
+.novost-container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    flex-flow:column-reverse;
+}
+
+.novost a{
+    color:#DB7093;
+    text-decoration:none;
+}
+
+.novost a:visited{
+    color:#DB7093;
+    text-decoration:none;
+}
+
+.novost a:hover{
+    color:#8e2447;
+}
+
+.urednik-button{
+    background:#A0A0A0;
+    color:white;
+    font-size:16px;
+    padding:15px;
+    margin-bottom:15px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:15px;
+    width:100%;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.urednik-button a {
+    text-decoration:none;
+    color:white;
+    width:100%;
+}
+
+.urednik-button a:visited{
+    text-decoration:none;
+}
+
+.urednik-button:hover{
+    background:#DB7093;
+}
+
+.txtarea{
+    margin-top:8px;
+}
+
+textarea{
+    outline:none;
+    background:none;
+    font-size:16px;
+    font-family:arial;
+    overflow:auto;
+    resize: none;
+    border-bottom:1px solid #DB7093;
+    border-left:none;
+    border-top:none;
+    border-right:none;
+    padding-left:9px;
+}
+
+.urednik-novost-button{
+    background:#A0A0A0;
+    color:white;
+    font-size:16px;
+    padding:15px;
+    margin-bottom:15px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:15px;
+    width:100%;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.urednik-novost-button a {
+    text-decoration:none;
+    color:white;
+    width:100%;
+}
+
+.urednik-novost-button a:visited{
+    text-decoration:none;
+}
+
+.urednik-novost-button:hover{
+    background:#DB7093;
+}
+
+.komentari{
+    color:#000;
+    width:100%;
+    margin-top:10px;
+    border:1px solid #C56484;
+    padding:5px;
+}
+
+.komentari a {
+    color:#000;
+    text-decoration:none;
+}
+
+.komentari a:visited{
+    color:#000;
+}
+
+.komentari a:hover{
+    color:#C56484;
+}
+
+.sadrzaj{
+    width:50%;
+    min-height:50%;
+    max-height:100%;
+    word-wrap:break-word;
+    text-align:justify;
+    font-size:15px;
+}
+
+.kom{
+    min-height:50%;
+    min-width:50%;
+    text-align:justify;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    max-height:100%;
+    font-size:13px;
+}
